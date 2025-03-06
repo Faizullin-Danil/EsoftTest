@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.rectangle {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent; /* Левый угол */
+    border-right: 100px solid transparent; /* Правый угол */
+    border-bottom: 200px solid; /* Нижняя сторона прозрачная */
+    position: relative;
+}
+
+.circle {
+    width: 50px;         /* Диаметр круга */
+    height: 50px;        /* Диаметр круга */
+    border: 2px solid black;
+    border-radius: 50%;  /* Создание круга */
+    position: absolute;  /* Позиционирование круга внутри прямоугольника */
+    top: 50%;            /* Центрирование по вертикали */
+    left: 25%;           /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Коррекция для точного центрирования */
+}
+
+.pipe {
+    width: 20px; /* Ширина трубы */
+    height: 60px; /* Высота трубы */
+    background-color: black; /* Цвет трубы */
+    position: absolute;
+    top: 60px;  /* Размещаем трубу выше треугольника */
+    left: 40px;  /* Смещаем трубу к правому краю */
+}
+
+.door {
+    width: 50px;
+    height: 80px;
+    position: absolute;
+    background-color: black;
+    top: 20px;
+    left: 60%;
+}
+
